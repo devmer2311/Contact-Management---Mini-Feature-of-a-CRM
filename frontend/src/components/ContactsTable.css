@@ -1,0 +1,91 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #3c3c5c); 
+    color: #ffffff;
+  }
+  
+  .table-container {
+    margin: 20px auto; 
+    padding: 10px;
+    max-width: 95%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: #2e2e4d; 
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #3c3c5c; 
+    border: 1px solid #6a6a91; 
+    overflow: hidden;
+  }
+  
+  .table thead {
+    background: linear-gradient(135deg, #4b0082, #6a5acd); 
+    color: #ffffff;
+  }
+  
+  .table th, .table td {
+    text-align: left;
+    padding: 12px 15px;
+    border: 1px solid #6a6a91; 
+  }
+  
+  .table th {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .table tbody tr {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #6a5acd;
+    color: #ffffff;
+  }
+  
+  .table td {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  
+  .actions button {
+    background: none;
+    border: none;
+    color: #1e90ff; 
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .actions button:hover {
+    color: #ff6347; 
+  }
+  
+  .actions i {
+    margin-right: 5px;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .table-container {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
